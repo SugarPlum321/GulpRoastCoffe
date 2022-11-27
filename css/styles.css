@@ -14,16 +14,7 @@ font-family: 'Lato', sans-serif;
 #D98555 peach
 #F2F2F2 white
 */
-body {
-  background-color: #131d26;
-  font-family: "Poppins", sans-serif;
-}
-header {
-  background-color: #082b59;
-  border: 1rem #d98555;
-  border-style: none none double none;
-  font-size: 20px;
-}
+/*cell phone responsive*/
 @media (max-width: 500px) {
   .navigation {
     display: flex;
@@ -39,9 +30,44 @@ header {
   .about-body {
     display: contents;
   }
-  .focuse-block {
+  .coffeBlock {
+    margin: 2rem 0;
+  }
+  .coffeeimage {
+    width: 100%;
+  }
+} /*tablet responsive*/
+@media (min-width: 1200px) and ((max-width: 500px)) {
+  .navigation {
+    display: flex;
+    justify-content: center;
+  }
+  mainbody {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .about-body {
     display: contents;
   }
+  .coffeBlock {
+    margin: 2rem 0;
+  }
+  .coffeeimage {
+    width: 100%;
+  }
+}
+body {
+  background-color: #131d26;
+  font-family: "Poppins", sans-serif;
+  display: contents;
+}
+header {
+  background-color: #082b59;
+  border: 1rem #d98555;
+  border-style: none none double none;
+  font-size: 20px;
 }
 .logo {
   display: flex;
@@ -71,7 +97,6 @@ a:hover {
   color: #d98555;
 }
 li {
-  display: flex;
   color: #f2f2f2;
   padding: 0.5rem 1.5rem;
   list-style: none;
