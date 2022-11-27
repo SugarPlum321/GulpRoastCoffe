@@ -24,6 +24,25 @@ header {
   border-style: none none double none;
   font-size: 20px;
 }
+@media (max-width: 500px) {
+  .navigation {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  mainbody {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .about-body {
+    display: contents;
+  }
+  .focuse-block {
+    display: contents;
+  }
+}
 .logo {
   display: flex;
   align-items: center;
@@ -82,7 +101,7 @@ mainbody {
 }
 .about-body {
   padding: 1.5rem 4rem;
-  width: 30rem;
+  width: auto;
   min-width: 25rem;
 }
 .button-block {
