@@ -15,7 +15,7 @@ font-family: 'Lato', sans-serif;
 #F2F2F2 white
 */
 /*cell phone responsive*/
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .navigation {
     display: flex;
     flex-flow: column;
@@ -33,29 +33,27 @@ font-family: 'Lato', sans-serif;
   .coffeBlock {
     margin: 2rem 0;
   }
-  .coffeeimage {
+  .coffeeimage-01 {
     width: 100%;
   }
-} /*tablet responsive*/
-@media (min-width: 1200px) and ((max-width: 500px)) {
+}
+/*tablet responsive*/
+@media (min-width: 651px) and (max-width: 1200px) {
   .navigation {
     display: flex;
     justify-content: center;
   }
   mainbody {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     justify-content: center;
     align-items: flex-start;
-  }
-  .about-body {
-    display: contents;
   }
   .coffeBlock {
     margin: 2rem 0;
   }
-  .coffeeimage {
-    width: 100%;
+  .coffeeimage-01 {
+    content: url(/media/images/gulp-pouring-coffee-vertical.jpg);
   }
 }
 body {
@@ -151,9 +149,10 @@ mainbody {
   border-radius: 15px;
   color: #f2f2f2;
 }
-.coffeeimage {
+.coffeeimage-01 {
   border-radius: 15px 15px 0 0;
 }
+
 .imagetext {
   padding: 0.75rem 3rem;
 }
