@@ -215,7 +215,19 @@ mainbody {
   border-radius: 15px;
   margin: 1rem 1rem;
 }
-
+/*contact*/
+contact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.homepage-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
 footer {
   background-color: #082b59;
   border: 1rem #d98555;
