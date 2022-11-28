@@ -16,6 +16,7 @@ font-family: 'Lato', sans-serif;
 */
 /*cell phone responsive*/
 @media (max-width: 550px) {
+  /*about page*/
   .navigation {
     display: flex;
     flex-flow: column;
@@ -36,6 +37,7 @@ font-family: 'Lato', sans-serif;
   .coffeeimage-01 {
     width: 100%;
   }
+  /*product page*/
 }
 /*tablet responsive*/
 @media (min-width: 551px) and (max-width: 1200px) {
@@ -109,6 +111,7 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
+/* about page*/
 .location-link {
   color: #59331d;
   text-decoration-color: #082b59;
@@ -158,6 +161,34 @@ mainbody {
 
 .imagetext {
   padding: 0.75rem 3rem;
+}
+/*Products*/
+.product-body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.group-one {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.group-two {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.content {
+  margin: 1rem 2rem;
+}
+.image-styling {
+  border-radius: 15px;
+  margin: 1rem 1rem;
+  width: 100%;
 }
 
 footer {
