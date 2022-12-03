@@ -94,20 +94,18 @@ header {
   border-style: none none double none;
   font-size: 20px;
 }
-.logo {
+nav {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+}
+.logo {
 }
 .logo-item {
   width: 250px;
 }
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+
 /* icon padding*/
 i {
   padding: 0.5rem;
@@ -185,29 +183,22 @@ mainbody {
   padding: 0.75rem 3rem;
 }
 /*Products*/
-.product-body {
+mainbody .product-body {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  width: 100%;
 }
 .group-01 {
-  display: flex;
   flex-flow: row;
   align-items: flex-start;
   flex-grow: 1;
   width: 100%;
 }
 .group-02 {
-  display: flex;
   flex-flow: row;
   align-items: flex-start;
   flex-grow: 1;
   width: 100%;
 }
 .content {
-  display: flex;
   flex-direction: column;
   margin: 1rem 2rem;
 }
