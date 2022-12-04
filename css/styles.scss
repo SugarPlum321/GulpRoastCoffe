@@ -23,7 +23,7 @@ $color-white: #f2f2f2;
 $heading-font-family: "Poppins", sans-serif;
 $body-font-family: "Lato", sans-serif;
 $basic-font-size: 1.25rem;
-$footer-font-size: cal(15 / rem);
+$footer-font-size: 0.75rem;
 $border-radius: 1rem;
 
 body {
@@ -43,7 +43,11 @@ nav {
   flex-direction: column;
   justify-content: center;
 }
-
+li {
+  color: $color-white;
+  padding: 0.5rem 1.5rem;
+  list-style: none;
+}
 .logo-item {
   width: 250px;
 }
@@ -61,11 +65,7 @@ a {
     color: $color-peach;
   }
 }
-li {
-  color: $color-white;
-  padding: 0.5rem 1.5rem;
-  list-style: none;
-}
+
 mainbody {
   display: flex;
   align-items: flex-start;
