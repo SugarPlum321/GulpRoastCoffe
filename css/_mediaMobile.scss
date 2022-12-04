@@ -1,0 +1,46 @@
+//mobile layout
+@media (max-width: 550px) {
+  /*about page*/
+  .navigation {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  mainbody {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .about-body {
+    display: contents;
+  }
+  .coffeBlock {
+    margin: 2rem 0;
+  }
+  .coffeeimage-01 {
+    width: 100%;
+  }
+  /*product page*/
+  .product-body {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .group-01 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .group-02 {
+    display: flex;
+    flex-flow: column;
+  }
+  .content {
+    display: flex;
+    flex-flow: column;
+    margin: 1rem 2rem;
+  }
+}

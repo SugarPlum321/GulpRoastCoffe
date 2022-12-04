@@ -1,11 +1,7 @@
-/* see the brand guide for colors, fonts, and images in CodePen: 
-https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/edit?usp=sharing 
-
+/*
 heading
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 font-family: 'Poppins', sans-serif;
 all-Other
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap");
 font-family: 'Lato', sans-serif;
 
 #082B59 blue
@@ -14,92 +10,26 @@ font-family: 'Lato', sans-serif;
 #D98555 peach
 #F2F2F2 white
 */
-/*cell phone responsive*/
-@media (max-width: 550px) {
-  /*about page*/
-  .navigation {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-  }
-  mainbody {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .about-body {
-    display: contents;
-  }
-  .coffeBlock {
-    margin: 2rem 0;
-  }
-  .coffeeimage-01 {
-    width: 100%;
-  }
-  /*product page*/
-  .product-body {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    flex-flow: column;
-    justify-content: center;
-  }
-  .group-01 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .group-02 {
-    display: flex;
-    flex-flow: column;
-  }
-  .content {
-    display: flex;
-    flex-flow: column;
-    margin: 1rem 2rem;
-  }
-}
-
-/*tablet responsive*/
-@media (min-width: 551px) and (max-width: 1200px) {
-  .navigation {
-    display: flex;
-    justify-content: center;
-  }
-  mainbody {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: flex-start;
-    width: auto;
-  }
-
-  .coffeBlock {
-    margin: 2rem 0;
-    width: 100%;
-  }
-  .coffeeimage-01 {
-    content: url(/media/images/gulp-pouring-coffee-vertical.jpg);
-  }
-}
 body {
   background-color: #131d26;
   font-family: "Poppins", sans-serif;
   display: contents;
 }
+
 header {
   background-color: #082b59;
   border: 1rem #d98555;
   border-style: none none double none;
   font-size: 20px;
 }
+
 nav {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
+
 .logo-item {
   width: 250px;
 }
@@ -108,35 +38,45 @@ nav {
 i {
   padding: 0.5rem;
 }
+
 a {
   color: #f2f2f2;
 }
+
 a:visited {
   color: #f2f2f2;
 }
+
 a:hover {
   color: #d98555;
 }
+
 li {
   color: #f2f2f2;
   padding: 0.5rem 1.5rem;
   list-style: none;
 }
+
 h1 {
   font-family: "Lato", sans-serif;
 }
+
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
+
 /* about page*/
 .location-link {
   color: #59331d;
-  text-decoration-color: #082b59;
+  -webkit-text-decoration-color: #082b59;
+          text-decoration-color: #082b59;
 }
+
 .location-link:hover {
   color: #d98555;
 }
+
 mainbody {
   display: flex;
   align-items: flex-start;
@@ -146,11 +86,13 @@ mainbody {
   padding: 3rem;
   color: black;
 }
+
 .about-body {
   padding: 1.5rem 4rem;
   width: auto;
   min-width: 25rem;
 }
+
 .button-block {
   background-color: #59331d;
   border: 2px solid #59331d;
@@ -159,6 +101,7 @@ mainbody {
   color: #f2f2f2;
   font-size: 20px;
 }
+
 .button-block:hover {
   background-color: #d98555;
   border: 2px solid #d98555;
@@ -173,6 +116,7 @@ mainbody {
   border-radius: 15px;
   color: #f2f2f2;
 }
+
 .coffeeimage-01 {
   border-radius: 15px 15px 0 0;
 }
@@ -180,30 +124,36 @@ mainbody {
 .imagetext {
   padding: 0.75rem 3rem;
 }
+
 /*Products*/
 mainbody .product-body {
   display: flex;
 }
+
 .group-01 {
   flex-flow: row;
   align-items: flex-start;
   flex-grow: 1;
   width: 100%;
 }
+
 .group-02 {
   flex-flow: row;
   align-items: flex-start;
   flex-grow: 1;
   width: 100%;
 }
+
 .content {
   flex-direction: column;
   margin: 1rem 2rem;
 }
+
 .image-styling {
   border-radius: 15px;
   margin: 1rem 1rem;
 }
+
 /*contact*/
 contact {
   display: flex;
@@ -211,12 +161,14 @@ contact {
   justify-content: flex-start;
   flex-direction: column;
 }
+
 .homepage-body {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
 }
+
 footer {
   background-color: #082b59;
   border: 1rem #d98555;
@@ -229,6 +181,7 @@ footer {
   text-align: center;
   color: #f2f2f2;
 }
+
 .allrightsreserved {
   display: flex;
   justify-content: center;
@@ -236,4 +189,4 @@ footer {
   padding: 0 0 1rem 0;
   font-size: 15px;
   color: #f2f2f2;
-}
+}/*# sourceMappingURL=styles.css.map */

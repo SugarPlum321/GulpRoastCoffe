@@ -1,11 +1,7 @@
-/* see the brand guide for colors, fonts, and images in CodePen: 
-https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/edit?usp=sharing 
-
+/*
 heading
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 font-family: 'Poppins', sans-serif;
 all-Other
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap");
 font-family: 'Lato', sans-serif;
 
 #082B59 blue
@@ -14,77 +10,19 @@ font-family: 'Lato', sans-serif;
 #D98555 peach
 #F2F2F2 white
 */
-/*cell phone responsive*/
-@media (max-width: 550px) {
-  /*about page*/
-  .navigation {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-  }
-  mainbody {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .about-body {
-    display: contents;
-  }
-  .coffeBlock {
-    margin: 2rem 0;
-  }
-  .coffeeimage-01 {
-    width: 100%;
-  }
-  /*product page*/
-  .product-body {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    flex-flow: column;
-    justify-content: center;
-  }
-  .group-01 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .group-02 {
-    display: flex;
-    flex-flow: column;
-  }
-  .content {
-    display: flex;
-    flex-flow: column;
-    margin: 1rem 2rem;
-  }
-}
-
-/*tablet responsive*/
-@media (min-width: 551px) and (max-width: 1200px) {
-  .navigation {
-    display: flex;
-    justify-content: center;
-  }
-  mainbody {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: flex-start;
-    width: auto;
-  }
-
-  .coffeBlock {
-    margin: 2rem 0;
-    width: 100%;
-  }
-  .coffeeimage-01 {
-    content: url(/media/images/gulp-pouring-coffee-vertical.jpg);
-  }
-}
+//@import "variables";
+//@import "mixins";
+//@import "mediaMobile";
+//@import "mediaTablet";
+//@import "mediaDesktop";
+$color-blue: #082b59;
+$color-navyblue: #131d26;
+$color-coffe: #59331d;
+$color-peach: #d98555;
+$color-white: #f2f2f2;
+$border-radius: 1rem;
 body {
-  background-color: #131d26;
+  background-color: $color-navyblue;
   font-family: "Poppins", sans-serif;
   display: contents;
 }
