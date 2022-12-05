@@ -26,7 +26,7 @@ header {
 nav {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -136,16 +136,24 @@ mainbody.product-body .content {
 /*contact*/
 contact {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
   flex-direction: column;
+  align-items: center;
+}
+contact a {
+  color: #131d26;
 }
 
-.homepage-body {
+.homepage {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  flex-direction: row;
+}
+.homepage div {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.homepage img {
+  border-radius: 1rem;
 }
 
 footer {
@@ -153,15 +161,13 @@ footer {
   border: 1rem #d98555;
   border-style: double none none none;
 }
-
-.educaional {
+footer .educaional {
   padding: 0 5rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   text-align: center;
   color: #f2f2f2;
 }
-
-.allrightsreserved {
+footer .allrightsreserved {
   display: flex;
   justify-content: center;
   align-items: center;
