@@ -2,14 +2,12 @@
 @media (max-width: 550px) {
   /*about page*/
   .navigation {
-    display: flex;
+    @include flex-center;
     flex-flow: column;
-    justify-content: center;
   }
   mainbody {
-    display: flex;
+    @include flex-center;
     flex-flow: column;
-    justify-content: center;
     align-items: flex-start;
   }
   .about-body {
@@ -23,11 +21,10 @@
   }
   /*product page*/
   .product-body {
-    display: flex;
+    @include flex-center;
     justify-content: flex-start;
     flex-wrap: nowrap;
     flex-flow: column;
-    justify-content: center;
   }
   .group-01 {
     display: flex;

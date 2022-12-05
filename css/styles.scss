@@ -10,26 +10,15 @@ font-family: 'Lato', sans-serif;
 #D98555 peach
 #F2F2F2 white
 */
-//@import "variables";
-//@import "mixins";
-//@import "mediaMobile";
+@import "variables";
+@import "mixins";
+@import "mediaMobile";
 //@import "mediaTablet";
 //@import "mediaDesktop";
-$color-blue: #082b59;
-$color-navyblue: #131d26;
-$color-coffe: #59331d;
-$color-peach: #d98555;
-$color-white: #f2f2f2;
-$heading-font-family: "Poppins", sans-serif;
-$body-font-family: "Lato", sans-serif;
-$basic-font-size: calc(1.25rem + 1vw);
-$footer-font-size: Calc(0.75rem + 1vw);
-$border-radius: 1rem;
 
 body {
-  background-color: $color-navyblue;
+  background-color: $color-white;
   font-family: $heading-font-family;
-  display: contents;
 }
 //headerlayout
 header {
@@ -48,15 +37,7 @@ header {
 }
 //navigations
 ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  li {
-    color: $color-white;
-    padding: 0.5rem 1.5rem;
-    list-style: none;
-  }
+  @include nav-layout;
 }
 
 // icon padding
@@ -74,9 +55,8 @@ a {
 }
 
 mainbody {
-  display: flex;
+  @include flex-center;
   align-items: flex-start;
-  justify-content: center;
   background-color: $color-white;
   margin: 3rem rem;
   padding: 3rem;
@@ -116,8 +96,7 @@ mainbody {
 }
 
 .focuse-block {
-  display: flex;
-  align-items: center;
+  @include flex-center;
   flex-direction: column;
   background-color: $color-coffe;
   background-size: contain;
@@ -133,9 +112,9 @@ mainbody {
 
 //Products
 mainbody.product-body {
-  display: flex;
+  @include flex-center;
   flex-wrap: wrap;
-  justify-content: center;
+
   span {
     display: flex;
     flex-direction: row;
@@ -183,15 +162,9 @@ footer {
   border-style: double none none none;
 
   .educaional {
-    padding: 0 5rem;
-    font-size: $basic-font-size;
-    text-align: center;
-    color: $color-white;
+    @include footer-alinment;
   }
   .allrightsreserved {
-    padding: 1rem 5rem;
-    font-size: $footer-font-size;
-    color: $color-white;
-    text-align: center;
+    @include footer-alinment;
   }
 }
