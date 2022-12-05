@@ -22,8 +22,8 @@ $color-peach: #d98555;
 $color-white: #f2f2f2;
 $heading-font-family: "Poppins", sans-serif;
 $body-font-family: "Lato", sans-serif;
-$basic-font-size: 1.25rem;
-$footer-font-size: 0.75rem;
+$basic-font-size: calc(1.25rem + 1vw);
+$footer-font-size: Calc(0.75rem + 1vw);
 $border-radius: 1rem;
 
 body {
@@ -31,25 +31,32 @@ body {
   font-family: $heading-font-family;
   display: contents;
 }
+//headerlayout
 header {
   background-color: $color-blue;
   border: 1rem $color-peach;
   border-style: none none double none;
   font-size: $basic-font-size;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 250px;
+  }
 }
-nav {
+//navigations
+ul {
   display: flex;
-  align-items: center;
   flex-direction: row;
   justify-content: center;
-}
-li {
-  color: $color-white;
-  padding: 0.5rem 1.5rem;
-  list-style: none;
-}
-.logo-item {
-  width: 250px;
+
+  li {
+    color: $color-white;
+    padding: 0.5rem 1.5rem;
+    list-style: none;
+  }
 }
 
 // icon padding
@@ -124,7 +131,7 @@ mainbody {
   }
 }
 
-/*Products*/
+//Products
 mainbody.product-body {
   display: flex;
   flex-wrap: wrap;
@@ -144,7 +151,7 @@ mainbody.product-body {
   }
 }
 
-/*contact*/
+//contact
 contact {
   display: flex;
   flex-direction: column;
@@ -162,11 +169,14 @@ contact {
     flex-direction: column;
     align-items: center;
   }
+  p {
+    padding: 0 2rem;
+  }
   img {
     border-radius: $border-radius;
   }
 }
-
+//footer
 footer {
   background-color: $color-blue;
   border: 1rem$color-peach;
@@ -179,11 +189,9 @@ footer {
     color: $color-white;
   }
   .allrightsreserved {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 1rem 0;
+    padding: 1rem 5rem;
     font-size: $footer-font-size;
     color: $color-white;
+    text-align: center;
   }
 }
