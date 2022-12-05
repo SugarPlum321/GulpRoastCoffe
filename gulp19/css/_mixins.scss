@@ -1,0 +1,21 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin nav-layout {
+  @include flex-center;
+  flex-direction: row;
+
+  li {
+    color: $color-white;
+    padding: 0.5rem 1.5rem;
+    list-style: none;
+  }
+}
+@mixin footer-alinment {
+  padding: 1rem 5rem;
+  font-size: $footer-font-size;
+  color: $color-white;
+  text-align: center;
+}

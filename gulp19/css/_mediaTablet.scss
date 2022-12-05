@@ -1,0 +1,22 @@
+//tablet responsive
+@media (min-width: 551px) and (max-width: 1200px) {
+  .navigation {
+    display: flex;
+    justify-content: center;
+  }
+  mainbody {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+  }
+
+  .coffeBlock {
+    margin: 2rem 0;
+    width: 100%;
+  }
+  .coffeeimage-01 {
+    content: url(/media/images/gulp-pouring-coffee-vertical.jpg);
+  }
+}
