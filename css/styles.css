@@ -114,28 +114,23 @@ mainbody .location-link:hover {
 }
 
 /*Products*/
-.group-01 {
-  flex-flow: row;
-  align-items: flex-start;
-  flex-grow: 1;
+mainbody.product-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+mainbody.product-body span {
+  display: flex;
+  flex-direction: row;
   width: 100%;
 }
-
-.group-02 {
-  flex-flow: row;
-  align-items: flex-start;
-  flex-grow: 1;
-  width: 100%;
-}
-
-.content {
-  flex-direction: column;
-  margin: 1rem 2rem;
-}
-
-.image-styling {
+mainbody.product-body img {
   border-radius: 1rem;
   margin: 1rem 1rem;
+}
+mainbody.product-body .content {
+  flex-direction: column;
+  margin: 1rem 2rem;
 }
 
 /*contact*/
